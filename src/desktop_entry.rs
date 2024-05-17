@@ -260,7 +260,7 @@ pub struct DesktopEntry {
     /// This specification defines 3 types of desktop entries: Application (type 1), Link (type 2) and Directory (type 3). To allow the addition of new types in the future, implementations should ignore desktop entries with an unknown type.
     pub xdg_type:DesktopType,
     /// Version of the Desktop Entry Specification that the desktop entry conforms with. Entries that confirm with this version of the specification should use 1.5. Note that the version field is not required to be present.
-    pub version:f32,
+    pub version:String,
     /// Specific name of the application, for example "Mozilla".
     pub name:Option<String>,
     /// Generic name of the application, for example "Web Browser".
@@ -317,7 +317,7 @@ impl DesktopEntry {
         // nothing to see here
         DesktopEntry {
             xdg_type:initial_type,
-            version:1.0,
+            version:"1.0".into(),
             name:None,
             generic_name:None,
             no_display:None,
@@ -515,7 +515,7 @@ impl DesktopEntry {
         // blast off!
         DesktopEntry {
             xdg_type:convert_xdg_type(dt),
-            version:ver.unwrap().parse::<f32>().ok().unwrap(),
+            version:ver.unwrap(),
             name:local_name,
             generic_name:local_gen,
             no_display:to_bool(nd),
