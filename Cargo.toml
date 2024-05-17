@@ -1,6 +1,6 @@
 # package info
 [package]
-name = "xdgkit2"
+name = "xdgkit"
 version = "3.2.4"
 authors = ["Israel Dahl <israeldahl@protonmail.com>"]
 edition = "2018"
@@ -17,11 +17,6 @@ documentation = "https://docs.rs/xdgkit2/"
 [lib]
 name = "xdgkit"
 path = "src/lib.rs" 
-
-# binary file
-[[bin]]
-name = "xdgkit"
-path = "src/main.rs"
 
 # dependencies
 [dependencies]
