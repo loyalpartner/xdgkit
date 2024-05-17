@@ -1,6 +1,6 @@
 # package info
 [package]
-name = "xdgkit"
+name = "xdgkit2"
 version = "3.2.4"
 authors = ["Israel Dahl <israeldahl@protonmail.com>"]
 edition = "2018"
@@ -9,9 +9,9 @@ keywords = ["xdg","menu","icons","desktop","linux"]
 categories = ["command-line-utilities","os::linux-apis","os"]
 readme = "README.md"
 license-file = "LICENSE"
-repository = "https://github.com/1sra3l/xdgkit"
+repository = "https://github.com/loyalpartner/xdgkit"
 homepage = "https://freedesktop.org"
-documentation = "https://docs.rs/xdgkit/"
+documentation = "https://docs.rs/xdgkit2/"
 
 # library files
 [lib]
