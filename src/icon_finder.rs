@@ -126,7 +126,7 @@ pub fn generate_dir_list() -> Vec<DirList>{
         }
     }
 
-    for (theme_name, ref mut return_paths) in themes {
+    for (_theme_name, ref mut return_paths) in themes {
         let mut index_theme_path = None;
         let mut index_theme_index = 0;
         for (i, return_path) in return_paths.iter().enumerate() {

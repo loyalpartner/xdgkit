@@ -25,13 +25,9 @@ This is not ready for use yet
 // along with this program; if not, write to the Free Software
 // Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
-use crate::desktop_entry::*;
-use crate::basedir::*;
 
-use std::path::PathBuf;
 extern crate quick_xml;
 extern crate serde;
-use quick_xml::de::{from_str, DeError};
 //use serde_xml_rs::from_str;//, to_string};
 use serde::{Deserialize, Deserializer, Serialize};
 
